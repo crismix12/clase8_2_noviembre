@@ -27,7 +27,7 @@ db.sync({ force: false }) //devuelve una promesa  //force: true borra toda la in
 // ejecutamos init models cuando nuestra base de datos este conectada y sincronizada
 initModels()
 
-app.get('/', () => {
+app.get('/', (req, res) => {
     res.status(200).json('Todo bien');
 })
 
